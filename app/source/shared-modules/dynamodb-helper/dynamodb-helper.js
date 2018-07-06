@@ -291,7 +291,7 @@ DynamoDBHelper.prototype.getDynamoDBDocumentClient = function(credentials, callb
             }.bind(this));
         }
         else
-            callback(docClient);
+            callback(null, docClient);
 
     }
     catch (error) {
